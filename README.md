@@ -14,3 +14,4 @@ books
 videos
 record videos
 ```
+## How to set them : 
