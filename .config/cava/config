@@ -1,0 +1,96 @@
+# CAVA CONFIGURATION FILE
+# ====================================================
+
+[input]
+# Audio input method:
+#   pulse     = for PulseAudio or PipeWire (via pipewire-pulse)
+#   pipewire  = for native PipeWire
+#   alsa      = for ALSA loopback (hw:Loopback,1)
+#   auto      = automatic (may fail sometimes)
+method = pulse
+source = alsa_output.pci-0000_00_1f.3.analog-stereo.monitor
+
+# ====================================================
+[general]
+# Framerate (FPS)
+framerate = 60
+
+# Sensitivity multiplier
+sensitivity = 100
+
+# Autosens (automatic sensitivity)
+autosens = 1
+
+# Noise floor (dB)
+noise_reduction = 0.77
+
+# ====================================================
+[output]
+# Where to draw cava
+method = ncurses
+
+# Characters used for bars
+bar_character = █
+# For gradient (character when lower amplitude)
+bar_delimiter = ▓
+# Character for empty part
+bar_space = " "
+
+# Mirror bars? (top + bottom)
+mirror = 0
+
+# Stereo channels: (0=mono, 1=stereo combined, 2=stereo split)
+stereo = 1
+
+# Hide bars with no signal
+hide_inactive_bars = 0
+
+# Number of bars (0 = auto)
+bars = 0
+
+# Bar width (in characters)
+bar_width = 2
+
+# Bar spacing (in characters)
+bar_spacing = 1
+
+# ====================================================
+[color]
+# Gradient colors (from low → high)
+gradient = 1
+gradient_count = 5
+gradient_color_1 = "#00ffcc"
+gradient_color_2 = "#00ccff"
+gradient_color_3 = "#0099ff"
+gradient_color_4 = "#6633ff"
+gradient_color_5 = "#cc00ff"
+
+# Background color
+background = default
+
+# Foreground (if gradient disabled)
+foreground = "#00ffcc"
+
+# ====================================================
+[smoothing]
+# Smoothing for bar motion
+monstercat = 1
+waves = 1
+integral = 80
+gravity = 100
+ignore = 0
+
+# ====================================================
+[eq]
+# Equalizer settings (boost/attenuate frequency bands)
+1 = 1.0
+2 = 1.0
+3 = 1.0
+4 = 1.0
+5 = 1.0
+6 = 1.0
+7 = 1.0
+8 = 1.0
+9 = 1.0
+10 = 1.0
+
