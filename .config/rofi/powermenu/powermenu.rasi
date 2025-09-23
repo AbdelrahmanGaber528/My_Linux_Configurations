@@ -1,0 +1,72 @@
+/*****----- Configuration -----*****/
+configuration {
+    show-icons: false;
+}
+
+/*****----- Global Properties -----*****/
+@import "../colors.rasi"
+@import "../fonts.rasi"
+
+// Main window (full window)
+
+window {
+    font: "0xProto Nerd Font 12";
+    location: center;
+    anchor: center;
+    fullscreen: false;
+    width: 450px;
+    height: 80px;
+    enabled: true;
+    border: 2px solid;
+    border-radius: 0px;
+    border-color: @lavender;
+    background-color: @base;
+}
+
+// Main box (input and buttons)
+mainbox {
+    enabled: true;
+    background-color: transparent;
+    children: [ "listview" ];
+}
+
+listview {
+    enabled: true;
+    columns: 1;
+    lines: 5;
+    scrollbar: false;
+    layout: horizontal;
+    spacing: 21px;
+    margin: 5.1px;
+    background-color: transparent;
+    text-color: @foreground;
+    cursor: "default";
+}
+
+element {
+    margin: 9px 0px 1px 0px;
+    padding: 1px 4px 0px 0px;
+    border: 0px solid;
+    border-radius: 0px;
+    background-color: transparent;
+    text-color: @text;
+    cursor: pointer;
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+}
+
+element normal.normal {
+    text-color: @text;
+    background-color: transparent;
+}
+
+element-text {
+    text-color: @text;
+    background-color: transparent;
+    cursor: inherit;
+    font: "0xProto Nerd Font 27";
+}
+
+element-text selected {
+    text-color: @green;
+}

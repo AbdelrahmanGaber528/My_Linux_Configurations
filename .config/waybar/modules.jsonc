@@ -11,18 +11,14 @@
         "window-rewrite-default": "",
         "window-rewrite": {
             "title<.*youtube.*>": "<span color='#f38ba8'></span>",
-            "class<google-chrome-stable>": "<span color='#eba0ac'></span>",
             "class<spotify>": "<span color='#a6e3a1'></span>",
             "class<discord>": "<span color='#b4befe'></span>",
-            "class<ayugram-desktop>": "<span color='#74c7ec'></span>",
-            "class<ayugram>": "<span color='#74c7ec'></span>",
-            "class<google-chrome-stable> title<.*github.*>": "<span color='black'></span>",
             "kitty": "",
             "code": "<span color='#89b4fa'>󰨞</span>",
             "title<.* - (.*) - VSCodium>": "codium $1"
         },
         "persistent-workspaces": {
-            "*": 5
+            "*": 4
         }
     },
     // center modules
@@ -35,22 +31,7 @@
         "max-length": 10,
         "tooltip": false
     },
-    // "cpu": {
-    //     "interval": 1,
-    //     "format": " {usage:>2}% <span color='#cdd6f4'>{icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7}</span>",
-    //     "format-icons": [
-    //         "⣀",
-    //         "⣄",
-    //         "⣆",
-    //         "⣇",
-    //         "⣧",
-    //         "⣷",
-    //         "⣾",
-    //         "⣿"
-    //     ]
-    // },
-    // right modules
-    "battery": {
+        "battery": {
         "states": {
             "warning": 30,
             "critical": 15
@@ -80,19 +61,19 @@
         ],
         "tooltip": false
     },
-    // PulseAudio module
-    // "pulseaudio": {
-    //     "format": "{volume}% {icon}",
-    //     "format-muted": "",
-    //     "format-icons": [
-    //         "",
-    //         "",
-    //         ""
-    //     ],
-    //     "on-click": "pavucontrol",
-    //     "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-    //     "scroll-step": 5
-    // },
+   // PulseAudio module
+    "pulseaudio": {
+        "format": " {icon} {volume}%",
+        "format-muted": "",
+        "format-icons": [
+            "",
+            "",
+            ""
+        ],
+        "on-click": "pavucontrol",
+        "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "scroll-step": 5
+    },
     "custom/notification": {
         "return-type": "json",
         "format": "{} ",

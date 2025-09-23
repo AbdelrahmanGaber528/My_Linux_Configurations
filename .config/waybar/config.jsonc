@@ -16,13 +16,11 @@
 	"modules-right": [
 		"battery",
 		"backlight",
-		"wireplumber",
+		"pulseaudio",
 		"custom/notification",
 		"hyprland/language",
 		"clock",
 		"network",
-		"custom/power",
-		"tray"
 	],
 	"include": [
 		"~/.config/waybar/modules.jsonc"
