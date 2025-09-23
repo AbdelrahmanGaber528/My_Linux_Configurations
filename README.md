@@ -14,3 +14,11 @@ books
 videos
 record videos
 ```
+## Vim : 
+```
+nvim
+Lazy
+plugins
+```
+
+### How to set them : 
